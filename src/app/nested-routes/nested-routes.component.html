@@ -1,0 +1,38 @@
+<div class="col-xs-6" style="border: 1px solid">
+  
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Color</th>
+        <th>Hexadecimal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr (click)="selectColor('Rojo', '#FF0000')">
+        <td>Rojo</td>
+        <td>#FF0000</td>
+      </tr>
+      <tr (click)="selectColor('Azul', '#2E2EFE')">
+        <td>Azul</td>
+        <td>#2E2EFE</td>
+      </tr>
+      <tr (click)="selectColor('Amarillo', '#FFFF00')">
+        <td>Amarillo</td>
+        <td>#FFFF00</td>
+      </tr>
+      <tr (click)="selectColor('Gris', '#848484')">
+        <td>Gris</td>
+        <td>#848484</td>
+      </tr>
+      <tr (click)="selectColor('Verde', '#04B431')">
+        <td>Verde</td>
+        <td>#04B431</td>
+      </tr>
+    </tbody>
+  </table>
+  
+</div>
+
+<div class="col-xs-6" [ngStyle]="{'height': '240px', 'border': '1px solid'}">
+  <router-outlet></router-outlet>
+</div>

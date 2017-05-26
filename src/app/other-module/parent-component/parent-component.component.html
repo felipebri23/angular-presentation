@@ -1,0 +1,25 @@
+<h2>
+  Este es el componente padre, hemos llegado aqui a través de las rutas.
+</h2>
+<div class="col-xs-6 resalted">
+  <h4>
+    Escribe nombre y apellidos para actualizar el componente hijo.
+  </h4>
+  <div class="form-group">
+    <label for="name" class="control-label">Name</label>
+    <input type="text" id="name" [(ngModel)]="name" autofocus />
+  </div>
+  <div class="form-group">
+    <label for="surname1" class="control-label">Surname 1</label>
+    <input type="text" id="surname1" [(ngModel)]="surname1" autofocus />
+  </div>
+    <div class="form-group">
+    <label for="surname2" class="control-label">Surname 2</label>
+    <input type="text" id="surname2" [(ngModel)]="surname2" autofocus />
+  </div>
+</div>
+<div class="col-xs-6">
+    <app-child-component [text]="name" (onValidate)="validName($event)"></app-child-component>
+    <app-child-component [text]="surname1" (onValidate)="validSurname1($event)"></app-child-component>
+    <app-child-component [text]="surname2" (onValidate)="validSurname2($event)"></app-child-component>
+</div>

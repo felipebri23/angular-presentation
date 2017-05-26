@@ -1,0 +1,21 @@
+<h4>
+  Data binding unidireccional por valor:
+</h4>
+<p>
+  {{ company }}
+</p>
+
+<h4>
+  Data binding unidireccional estableciendo valor a propiedad:
+</h4>
+<input type="text" appInputHighlight [color]="color" id="input2" name="input2">
+
+<h4>
+  Data binding unidirecional para asignar método a evento
+</h4>
+<button (click)="clickButton()">Click!</button>
+
+<h4>
+  Data binding bidirecional con [(ngModel)]
+</h4>
+<input type="text" [(ngModel)]="company">

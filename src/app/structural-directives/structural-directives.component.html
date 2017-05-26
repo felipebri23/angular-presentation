@@ -1,0 +1,28 @@
+<h4>
+  En este ejemplo tenemos una serie de radio buttons que le da comportamiento al input que tenemos dentro de nuestra template de directiva.
+</h4>
+
+
+<h5>Selecciona un color</h5>
+<div>
+    <input type="radio" name="colors" (click)="color=undefined">No mostrar
+    <input type="radio" name="colors" (click)="color='lightgreen'">Verde
+    <input type="radio" name="colors" (click)="color='yellow'">Amarillo
+    <input type="radio" name="colors" (click)="color='cyan'">Azul
+</div>
+
+<div *appShowInputWithColor="color">
+    <label for="input1">Input: </label>
+    <input type="text" id="input1" name="input1">
+</div>
+
+<h4>
+    Tenemos la opcíon también de mostrar varios input dentro de nuestra template de directiva
+</h4>
+
+<div *appShowInputWithColor="'yellow'">
+    <label for="input2">Input: </label>
+    <input type="text" id="input2" name="input2">
+        <label for="input3">Input: </label>
+    <input type="text" id="input3" name="input3">
+</div>

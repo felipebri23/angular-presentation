@@ -1,0 +1,38 @@
+<div class="container">
+  
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand" [routerLink]="['/home']">Angular</a>
+    </div>
+  
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li [routerLinkActive]="'active'">
+          <a [routerLink]="['/other-module']">Componiendo componentes</a>
+        </li>
+        <li [routerLinkActive]="'active'">
+          <a [routerLink]="['/attribute-directives']">Attribute directives</a>
+        </li>
+        <li [routerLinkActive]="'active'">
+          <a [routerLink]="['/structural-directives']">Structural directives</a>
+        </li>
+        <li [routerLinkActive]="'active'">
+          <a [routerLink]="['/alert']">Servicio de alerta</a>
+        </li>
+        <li [routerLinkActive]="'active'">
+          <a [routerLink]="['/data-bindings']">Data bindings</a>
+        </li>
+        <li [routerLinkActive]="'active'">
+          <a [routerLink]="['/nested-routes']">Rutas anidadas</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+</div>
+
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
